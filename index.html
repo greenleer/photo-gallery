@@ -5,63 +5,70 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Lato:300,400&display=swap" rel="stylesheet">
   <meta charset=”utf-8”>
-  <title>Ryan Greenlee - Creative Human</title>
+  <title>Colorado 2019 | Photo Gallery</title>
 </head>
 
 <body>
   <div class="grid-wrapper">
-    <header id="home">
-      <nav>
-        <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#skills">skills</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </nav>
-      <div class="jumbotron">
-        <h1>I'm Ryan.</h1>
-        <h2>I design and build websites.</h2>
+    <!-- Navigation is placed outside of the header tag for z-indexing purposes -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#home">
+            <img class="nav-thumb" src="img/forest-small.jpg" alt="Cover Thumbnail" />
+          </a>
+        </li>
+        <li>
+          <a href="#image1">
+            <img class="nav-thumb" src="img/gregory-hayes-small.jpg" alt="Dream Lake Thumbnail" />
+          </a>
+        </li>
+        <li>
+          <a href="#image2">
+            <img class="nav-thumb" src="img/jeff-finley-small.jpg" alt="Nymph Lake Thumbnail" />
+          </a>
+        </li>
+        <li>
+          <a href="#image3">
+            <img class="nav-thumb" src="img/mike-scheid-small.jpg" alt="Maroon Bells Thumbnail" />
+          </a>
+        </li>
+        <li>
+          <a href="#image4">
+            <img class="nav-thumb" src="img/sheldon-thompson-small.jpg" alt="St. Andrew's Glacier" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Cover photo for the album -->
+    <header id="home" class="sticky">
+      <div id="jumbotron" class="full-width">
+        <h1>Colorado 2019</h1>
+        <p>A Photo Gallery</p>
       </div>
     </header>
-
-    <section id="about" class="about">
-      <h3 class="subhead">about me</h3>
-      <div class="content half-width">
-        <div class="box profile">
-        </div>
-      </div>
-      <div class="content half-width">
-        <p>I'm a front-end web developer living in Denver, CO.</p>
-        <p></p>
-        <p>
+    <!-- Images display as background to allow for content overlay -->
+    <section id="image1" class="sticky image1">
+      <div class="half-width">
+        <h2>Dream Lake</h2>
       </div>
     </section>
-
-    <section id="skills" class="skills">
-        <h3 class="subhead">skills</h3>
-      <div class="content third-width">
-        <p>This is where I'll write about design.</p>
-      </div>
-      <div class="third-width">
-      </div>
-      <div class="third-width">
+    <section id="image2" class="sticky image2">
+      <div class="half-width">
+        <h2>Nymph Lake</h2>
       </div>
     </section>
-
-    <section id="projects" class="projects">
-      <h3 class="subhead">projects</h3>
-      <div class="content">
-        <p>This is where I'll showcase web projects.</p>
+    <section id="image3" class="sticky image3">
+      <div class="half-width">
+        <h2>Maroon Bells</h2>
       </div>
     </section>
-
-    <footer id="contact" class="footer">
-      <h3 class="subhead">contact</h3>
-      <div class="content">
-        <p>This is where I'll write about contacting me.</p>
+    <!-- Back cover image for the album -->
+    <footer id="image4" class="image4">
+      <div class="half-width">
+        <h2>St. Andrew's Glacier</h2>
       </div>
+    </div>
 
   </div>
 </body>

@@ -1,118 +1,112 @@
-/*** GENERAL STYLES AND UTILITY CLASSES ***/
+/*** GENERAL STYLES ***/
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
-h1, h2, h3, p {
+h1, h2, p {
   color: #f9faea;
 }
 h1 {
-  font-size: 85px;
+  font-size: 65px;
   font-weight: bold;
 }
 h2 {
-  font-size: 50px;
-}
-h3 {
-  font-size: 60px;
+  padding: 10px 20px;
+  font-size 30px;
   font-weight: 300;
 }
-p {
-  font-size: 22px;
-  font-weight: 300;
-}
+/*** GRID DEFINITION ***/
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 700px repeat(4, 1fr);
+  grid-template-rows: repeat(5, 100vh);
 }
 /*** HEADER AREA ***/
-header {
-  grid-area: 1 / 1 / span 1 / span 12;
-  background-image: url('../img/forest-small.jpg');
-  height: 700px;
-  background-size: cover;
-  background-position: center;
-}
 nav {
   float: right;
-  padding: 25px 50px 25px 0px;
-  word-spacing: 30px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
 }
 nav ul {
   list-style: none;
 }
 nav ul li {
+  padding: 0 10px;
   display: inline-block;
+  vertical-align: middle;
 }
 nav ul li a {
+  color: #f9faea;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 300;
-  color: #f9faea;
 }
 nav ul li a:hover {
   color: gray;
 }
-.jumbotron {
-  clear: both;
-  width: auto;
-  position: relative;
-  left: 25px;
+header {
+  grid-area: 1 / 1 / span 1 / span 12;
+  background-image: url('../img/forest-small.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1
 }
 /*** SECTION GRID AREAS ***/
-.about {
+.image1 {
   grid-area: 2 / 1 / span 1 / span 12;
-  background-color: #4f3b02;
+  background-image: url('../img/gregory-hayes-small.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
 }
-.skills {
+.image2 {
   grid-area: 3 / 1 / span 1 / span 12;
-  background-color: #444037;
+  background-image: url('../img/jeff-finley-small.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 3;
 }
-.projects {
+.image3 {
   grid-area: 4 / 1 / span 1 / span 12;
-  background-color: #382804;
+  background-image: url('../img/mike-scheid-small.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 4;
 }
-.footer {
+.image4 {
   grid-area: 5 / 1 / span 2 / span 12;
-  background-color: #a87600;
+  background-image: url('../img/sheldon-thompson-small.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 5;
 }
 /*** UTILITY CLASSES ***/
-.box {
-  border: 1px solid black;
+.nav-thumb {
+  width: 50px;
+  height: 32px;
+  border: 1px solid white;
+  opacity: .5;
+  transition: .3s;
 }
-.subhead {
-  position: relative;
-  bottom: 26px;
-  right: 1px;
-  margin: 0;
+.nav-thumb:hover {
+  opacity: 1;
 }
-.content {
-  margin-bottom: 50px;
-  line-height: 32px;
-}
-.profile {
-  max-width: 60%;
-  height: 350px;
-  margin: auto;
-  box-sizing: border-box;
-  background-image: url('../img/ryan2.jpg');
-  background-size: cover;
-  background-position: bottom center;
-}
-.two-third {
-  width: 66.66%;
-  float: left;
-  box-sizing: border-box;
+.full-width {
+  width: 100%;
+  clear: both;
 }
 .half-width {
   width: 50%;
   float: left;
-  box-sizing: border-box;
 }
-.third-width {
-  width: 33.33%;
-  float: left;
-  box-sizing: border-box;
+.sticky {
+  position: sticky;
+  top: 0;
+}
+#jumbotron {
+  text-align: center;
+  position: relative;
+  top: 175px;
 }
