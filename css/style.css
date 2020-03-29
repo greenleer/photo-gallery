@@ -33,6 +33,7 @@ nav ul li {
   display: inline-block;
   vertical-align: middle;
 }
+/***
 nav ul li a {
   color: #f9faea;
   text-decoration: none;
@@ -41,6 +42,7 @@ nav ul li a {
 nav ul li a:hover {
   color: gray;
 }
+***/
 /*** UTILITY CLASSES ***/
 .nav-thumb {
   width: 50px;
