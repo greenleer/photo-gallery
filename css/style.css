@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
 }
 h1, h2, p {
   color: #f9faea;
@@ -21,7 +22,7 @@ h2 {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(5, 100vh);
 }
-/*** HEADER AREA ***/
+/*** THUMBNAIL NAVIGATION ***/
 nav {
   float: right;
   padding: 20px;
@@ -51,7 +52,6 @@ header {
   background-image: url('../img/forest-small.jpg');
   background-size: cover;
   background-position: center;
-  z-index: 1
 }
 /*** SECTION GRID AREAS ***/
 .image1 {
@@ -59,38 +59,39 @@ header {
   background-image: url('../img/gregory-hayes-small.jpg');
   background-size: cover;
   background-position: center;
-  z-index: 2;
+  z-index: 3;
 }
 .image2 {
   grid-area: 3 / 1 / span 1 / span 12;
   background-image: url('../img/jeff-finley-small.jpg');
   background-size: cover;
   background-position: center;
-  z-index: 3;
+  z-index: 4;
 }
 .image3 {
   grid-area: 4 / 1 / span 1 / span 12;
   background-image: url('../img/mike-scheid-small.jpg');
   background-size: cover;
   background-position: center;
-  z-index: 4;
+  z-index: 5;
 }
 .image4 {
   grid-area: 5 / 1 / span 2 / span 12;
   background-image: url('../img/sheldon-thompson-small.jpg');
   background-size: cover;
   background-position: center;
-  z-index: 5;
+  z-index: 6;
 }
 /*** UTILITY CLASSES ***/
 .nav-thumb {
   width: 50px;
   height: 32px;
-  border: 1px solid white;
-  opacity: .5;
+  border: 1px solid gray;
+  opacity: .7;
   transition: .3s;
 }
 .nav-thumb:hover {
+  border: 1px solid #ffffff;
   opacity: 1;
 }
 .full-width {
